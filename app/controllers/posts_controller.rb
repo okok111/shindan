@@ -3,13 +3,13 @@ class PostsController < ApplicationController
   def index
     @posts = params[:tag_id].present? ? Tag.find(params[:tag_id]).posts : Post.all  end
 
-  def uno
+  def question1
   end
 
-  def dos
+  def question2
   end
 
-  def tres
+  def question3
   end
 
   def new

@@ -6,10 +6,10 @@ Rails.application.routes.draw do
     resources :likes, only: [:create, :destroy]
     resources :comments, only: [:create]
     collection do
-      get 'uno'
-      get 'dos'
-      get 'tres'
+      get 'question1'
+      get 'question2'
+      get 'question3'
     end
   end                                           
-  root 'posts#index'
+  root 'posts#question1'
 end

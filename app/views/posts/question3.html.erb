@@ -1,0 +1,21 @@
+<% if params[:answer] == "C" %>
+    <h1>Cを選んだあなた</h1>
+    <h2>最終質問</h2>
+    <a href="/posts?tag_id=1">オススメ１結果を見る</a><!--「seed.rb」で「id 1」に登録されてる結果が出る-->
+    <a href="/posts?tag_id=2">オススメ２結果を見る</a><!--「seed.rb」で「id 2」に登録されてる結果が出る-->
+<% elsif params[:answer] == "D" %>
+    <h1>Dを選んだあなた</h1>
+    <h2>最終質問</h2>
+    <a href="/posts?tag_id=3">オススメ３結果を見る</a><!--「seed.rb」で「id 3」に登録されてる結果が出る-->
+    <a href="/posts?tag_id=4">オススメ４結果を見る</a><!--「seed.rb」で「id 4」に登録されてる結果が出る-->
+<% elsif params[:answer] == "E" %>
+    <h1>Eを選んだあなた</h1>
+    <h2>最終質問</h2>
+    <a href="/posts?tag_id=5">オススメ５結果を見る</a><!--「seed.rb」で「id 5」に登録されてる結果が出る-->
+    <a href="/posts?tag_id=6">オススメ６結果を見る</a><!--「seed.rb」で「id 6」に登録されてる結果が出る-->
+<% elsif params[:answer] == "F" %>
+    <h1>Fを選んだあなた</h1>
+    <h2>最終質問</h2>
+    <a href="/posts?tag_id=7">オススメ７結果を見る</a><!--「seed.rb」で「id 7」に登録されてる結果が出る-->
+    <a href="/posts?tag_id=8">オススメ８結果を見る</a><!--「seed.rb」で「id 8」に登録されてる結果が出る-->
+<% end %>

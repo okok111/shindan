@@ -1,7 +1,13 @@
 <h1>posts#index</h1>
+<h2>診断結果！</h2>
 <%= link_to "新規投稿へ", new_post_path %>
 <div class="posts-container">
     <% @posts.each do |t| %>
+            <% t.tags.each do |tag| %>
+                <h1>あなたは<%= tag.name %>と相性がいいです!!!</h1>
+            <% end %> 
+    <% end %>
+    <% @posts.each do |t| %>  
         <%= link_to post_path(t.id) do %>
         <div class="post">
             <p><a href="/users/<%= t.user.id %>"><%= t.user.name %></a></p>
